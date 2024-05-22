@@ -8,7 +8,6 @@ import { ImageSlider } from "./ImageSlider.js";
 
 const Carousel = () => {
     const imageSlide = ImageSlider;
-  
 
     return (
         <div className="w-full h-fit">
@@ -30,7 +29,7 @@ const Carousel = () => {
                         <img
                             src={imageUrl}
                             alt={`Slide ${index + 1}`}
-                            className="h-48 md:h-full w-full object-cover"
+                            className="h-48 md:h-80 w-full object-cover"
                         />
                     </SwiperSlide>
                 ))}
