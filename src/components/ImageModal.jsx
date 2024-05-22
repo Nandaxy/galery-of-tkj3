@@ -50,7 +50,7 @@ const ImageModal = ({ image, isOpen, onClose }) => {
                         &times;
                     </button>
                     <motion.div
-                        className="bg-gray-800 p-4 rounded-md relative max-w-full max-h-full overflow-auto"
+                        className="bg-gray-800 p-4 rounded-md relative max-w-full max-h-full overflow-autoshadow-2xl shadow-white/10"
                         onClick={e => e.stopPropagation()}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}

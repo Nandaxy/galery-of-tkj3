@@ -33,8 +33,11 @@ const Album = () => {
     const renderSkeleton = () => {
         const skeletonArray = Array.from({ length: 12 });
         return skeletonArray.map((_, index) => (
-            <div key={index} className="shadow-md rounded-lg animate-pulse">
-                <div className="w-[120px] h-[150px] bg-gray-700 rounded-md mb-2"></div>
+            <div
+                key={index}
+                className="shadow-md rounded-lg animate-pulse mx-auto"
+            >
+                <div className="w-[120px] h-[150px] bg-gray-700 rounded-md mb-2 animate-pulse"></div>
                 <div className="h-4 bg-gray-700 rounded w-3/4 mx-auto"></div>
             </div>
         ));
@@ -50,6 +53,9 @@ const Album = () => {
                     className="px-4 py-2 rounded-md bg-gray-800 text-white shadow-gray-100/10 shadow-lg transition-all hover:shadow-none hover:bg-gray-900"
                     onChange={handleSortChange}
                 >
+                    <option disabled selected>
+                        Urutkan
+                    </option>
                     <option value="asc">Sort by A-Z</option>
                     <option value="desc">Sort by Z-A</option>
                 </select>
@@ -68,7 +74,7 @@ const Album = () => {
         return (
             <div className="px-4 py-8">
                 {header()}
-                <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-2">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-2">
                     {renderSkeleton()}
                 </div>
             </div>
@@ -80,7 +86,7 @@ const Album = () => {
             <div className="px-4 py-8">
                 {" "}
                 {header()}
-                <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-2">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-2">
                     {tags.map(tag => {
                         const randomImageSrc = getRandomImageByTag(
                             tag,
@@ -96,12 +102,11 @@ const Album = () => {
                                                 : "https://via.placeholder.com/150"
                                         }
                                         alt={tag}
-                                        className="w-[150px] h-[150px] object-cover rounded-md mb-2"
-                                    /><p className="text-gray-100 text-center text-sm transition-colors duration-300 hover:text-blue-500">
-    {formatTag(tag)}
-</p>
-
-
+                                        className="w-[150px] h-[150px] object-cover rounded-md mb-2 mx-auto"
+                                    />
+                                    <p className="text-gray-100 text-center text-sm transition-colors duration-300 hover:text-blue-500">
+                                        {formatTag(tag)}
+                                    </p>
                                 </div>
                             </Link>
                         );

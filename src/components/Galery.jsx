@@ -124,7 +124,7 @@ const Galery = () => {
                                         loading="lazy"
                                         src={image.src}
                                         alt={`Gallery ${idx + 1}`}
-                                        className="w-full h-full object-cover rounded-md cursor-pointer"
+                                        className="w-full h-64 object-cover rounded-md cursor-pointer"
                                     />
                                 </div>
                             ))}

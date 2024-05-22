@@ -331,42 +331,42 @@ export const ImageData = [
     {
         "id": 826966,
         "src": "/images/1716337933796/IMG-20220910-WA0087.jpg",
-        "date": "2023-04-22",
+        "date": "2022-09-11",
         "tags": ["renang"],
         "size": 402224
     },
     {
         "id": 663052,
         "src": "/images/1716337933822/IMG-20220910-WA0086.jpg",
-        "date": "2023-04-22",
+        "date": "2022-09-11",
         "tags": ["renang"],
         "size": 402750
     },
     {
         "id": 42167,
         "src": "/images/1716337933842/IMG-20220910-WA0037.jpg",
-        "date": "2023-04-22",
+        "date": "2022-09-11",
         "tags": ["renang"],
         "size": 368255
     },
     {
         "id": 202900,
         "src": "/images/1716337933849/IMG-20220910-WA0034.jpg",
-        "date": "2023-04-22",
+        "date": "2022-09-11",
         "tags": ["renang"],
         "size": 379981
     },
     {
         "id": 604570,
         "src": "/images/1716337933860/IMG-20220910-WA0035.jpg",
-        "date": "2023-04-22",
+        "date": "2022-09-11",
         "tags": ["renang"],
         "size": 410232
     },
     {
         "id": 904253,
         "src": "/images/1716337933868/IMG-20220910-WA0045.jpg",
-        "date": "2023-04-22",
+        "date": "2022-09-11",
         "tags": ["renang"],
         "size": 381314
     },
@@ -392,4 +392,3 @@ export const ImageData = [
         "size": 145878
     }
 ]
-
